@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://www.bleepcto.com/ -->
+<html lang="en" class="dark" style="color-scheme: dark">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="icon" href="./logologologologologo.png" rel="shortcut icon">
+    <link
+      rel="stylesheet"
+      href="./Bleep_files/0b9c6e247cbfffb9.css"
+      data-precedence="next"
+    />
+    <title>Jail Cat</title>
+    <style type="text/css">
+      .rfm-marquee-container {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: var(--width);
+        transform: var(--transform);
+      }
+      .rfm-marquee-container:hover div {
+        animation-play-state: var(--pause-on-hover);
+      }
+      .rfm-marquee-container:active div {
+        animation-play-state: var(--pause-on-click);
+      }
+
+      .rfm-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .rfm-overlay::before,
+      .rfm-overlay::after {
+        background: linear-gradient(
+          to right,
+          var(--gradient-color),
+          rgba(255, 255, 255, 0)
+        );
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: var(--gradient-width);
+        z-index: 2;
+        pointer-events: none;
+        touch-action: none;
+      }
+      .rfm-overlay::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
+      .rfm-overlay::before {
+        left: 0;
+        top: 0;
+      }
+
+      .rfm-marquee {
+        flex: 0 0 auto;
+        min-width: var(--min-width);
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        animation: scroll var(--duration) linear var(--delay)
+          var(--iteration-count);
+        animation-play-state: var(--play);
+        animation-delay: var(--delay);
+        animation-direction: var(--direction);
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .rfm-initial-child-container {
+        flex: 0 0 auto;
+        display: flex;
+        min-width: auto;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .rfm-child {
+        transform: var(--transform);
+      }
+    </style>
+  </head>
+  <body class="__className_d65c78">
+    <script>
+      ((e, t, r, n, o, a, i, u) => {
+        let s = document.documentElement,
+          l = ["light", "dark"];
+        function c(t) {
+          var r;
+          (Array.isArray(e) ? e : [e]).forEach((e) => {
+            let r = "class" === e,
+              n = r && a ? o.map((e) => a[e] || e) : o;
+            r
+              ? (s.classList.remove(...n),
+                s.classList.add(a && a[t] ? a[t] : t))
+              : s.setAttribute(e, t);
+          }),
+            (r = t),
+            u && l.includes(r) && (s.style.colorScheme = r);
+        }
+        if (n) c(n);
+        else
+          try {
+            let e = localStorage.getItem(t) || r,
+              n =
+                i && "system" === e
+                  ? window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark"
+                    : "light"
+                  : e;
+            c(n);
+          } catch (e) {}
+      })("class", "theme", "dark", null, ["light", "dark"], null, true, true);
+    </script>
+    <main>
+      <section class="relative h-screen w-full overflow-hidden">
+        <div class="absolute inset-0">
+          <canvas class="w-full h-full" width="3425" height="1271"></canvas>
+        </div>
+        <div
+          class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4"
+        >
+          <h1 class="absolute top-5 text-5xl md:text-lg font-bold mb-6">
+            Jail Cat
+          </h1>
+          <div class="relative w-64 h-64 mb-12">
+            <img
+              alt="Main character"
+              loading="lazy"
+              width="250"
+              height="250"
+              decoding="async"
+              data-nimg="1"
+              class="relative z-10"
+              style="color: transparent"
+              src="./jailcatlogo.png"
+            />
+          </div>
+          <div class="flex space-x-8 mb-16 pt-14">
+            <a
+              class="transform hover:scale-110 transition-transform"
+              href="https://x.com"
+              ><div class="relative w-5 h-5 overflow-hidden">
+                <img
+                  alt="Link 1"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./Bleep_files/X.svg"
+                /></div></a
+            ><a
+              target="_blank"
+              class="transform hover:scale-110 transition-transform"
+              href="https://t.me/blumrebels_token"
+              ><div class="relative w-5 h-5 overflow-hidden">
+                <img
+                  target="_blank"
+                  alt="Link 2"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./Bleep_files/Telegram.svg"
+                /></div></a
+            ><a
+              target="_blank"
+              class="transform hover:scale-110 transition-transform"
+              href="https://dexscreener.com"
+              ><div class="relative w-5 h-5 overflow-hidden">
+                <img
+                  alt="Link 3"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./Bleep_files/Dexscreener.svg"
+                /></div
+            ></a>
+          </div>
+          <button
+            class="animate-bounce bg-white/20 p-3 rounded-full hover:bg-white/30 transition-colors"
+            aria-label="Scroll to meme gallery"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down w-6 h-6"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="relative bg-green-800 py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <div class="marquee-container">
+            <div class="marquee-row" style="top: 0%; transform: rotate(-5deg)">
+              <div
+                class="rfm-marquee-container"
+                style="
+                  --pause-on-hover: running;
+                  --pause-on-click: running;
+                  --width: 100%;
+                  --transform: none;
+                "
+              >
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: normal;
+                    --duration: 63.96563720703125s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-initial-child-container">
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-48 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: normal;
+                    --duration: 63.96563720703125s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-48 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="marquee-row" style="top: 20%; transform: rotate(2deg)">
+              <div
+                class="rfm-marquee-container"
+                style="
+                  --pause-on-hover: running;
+                  --pause-on-click: running;
+                  --width: 100%;
+                  --transform: none;
+                "
+              >
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: reverse;
+                    --duration: 111.01466471354166s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-initial-child-container">
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-64 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: reverse;
+                    --duration: 111.01466471354166s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-64 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="marquee-row" style="top: 45%; transform: rotate(-3deg)">
+              <div
+                class="rfm-marquee-container"
+                style="
+                  --pause-on-hover: running;
+                  --pause-on-click: running;
+                  --width: 100%;
+                  --transform: none;
+                "
+              >
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: normal;
+                    --duration: 84.16648297991071s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-initial-child-container">
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-56 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: normal;
+                    --duration: 84.16648297991071s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-56 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="marquee-row" style="top: 70%; transform: rotate(4deg)">
+              <div
+                class="rfm-marquee-container"
+                style="
+                  --pause-on-hover: running;
+                  --pause-on-click: running;
+                  --width: 100%;
+                  --transform: none;
+                "
+              >
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: reverse;
+                    --duration: 96.51482121394231s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-initial-child-container">
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                    <div class="rfm-child" style="--transform: none">
+                      <img
+                        alt="Beep"
+                        class="h-60 mx-8 opacity-15"
+                        src="./jailcattext.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rfm-marquee"
+                  style="
+                    --play: running;
+                    --direction: reverse;
+                    --duration: 96.51482121394231s;
+                    --delay: 0s;
+                    --iteration-count: infinite;
+                    --min-width: 100%;
+                  "
+                >
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                  <div class="rfm-child" style="--transform: none">
+                    <img
+                      alt="Beep"
+                      class="h-60 mx-8 opacity-15"
+                      src="./jailcattext.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
+            Welcome to Jail
+          </h2>
+          <p class="text-xl text-white/90 max-w-2xl mx-auto mb-12">
+            Join our community and explore the world of Jail
+          </p>
+          <a
+            href="https://dexscreener.com"
+            target="_blank"
+            ><button
+              class="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-full transition-all"
+            >
+              Learn More
+            </button></a
+          >
+        </div>
+      </section>
+      <section class="min-h-screen bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-3 p-4 auto-rows-auto bg-gray-100 dark:bg-gray-900"
+          >
+            <div
+              class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-2 row-span-2"
+            >
+              <div class="relative w-full h-full aspect-square">
+                <img
+                  alt="Meme image"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./img1.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+            >
+              <div class="relative w-full h-full aspect-square">
+                <img
+                  alt="Meme image"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./img2.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+            >
+              <div class="relative w-full h-full aspect-square">
+                <img
+                  alt="Meme image"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./img3.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-2 row-span-2"
+            >
+              <div class="relative w-full h-full aspect-square">
+                <img
+                  alt="Meme image"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./img4.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+            >
+              <div class="relative w-full h-full aspect-square">
+                <img
+                  alt="Meme image"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./img5.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+            >
+              <div class="relative w-full h-full aspect-square">
+                <img
+                  alt="Meme image"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="object-cover"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: transparent;
+                  "
+                  src="./img6.jpg"
+                />
+              </div>
+            </div>
+            <div
+            class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-2 row-span-2"
+          >
+            <div class="relative w-full h-full aspect-square">
+              <img
+                alt="Meme image"
+                loading="lazy"
+                decoding="async"
+                data-nimg="fill"
+                class="object-cover"
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  left: 0;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  color: transparent;
+                "
+                src="./img7.jpg"
+              />
+            </div>
+          </div>
+
+          <div
+          class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+        >
+          <div class="relative w-full h-full aspect-square">
+            <img
+              alt="Meme image"
+              loading="lazy"
+              decoding="async"
+              data-nimg="fill"
+              class="object-cover"
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                color: transparent;
+              "
+              src="./img12.jpg"
+            />
+          </div>
+        </div>
+
+        <div
+        class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+      >
+        <div class="relative w-full h-full aspect-square">
+          <img
+            alt="Meme image"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="object-cover"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              color: transparent;
+            "
+            src="./img8.jpg"
+          />
+        </div>
+      </div>
+
+      <div
+      class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-2 row-span-2"
+    >
+      <div class="relative w-full h-full aspect-square">
+        <img
+          alt="Meme image"
+          loading="lazy"
+          decoding="async"
+          data-nimg="fill"
+          class="object-cover"
+          style="
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            color: transparent;
+          "
+          src="./img9.jpg"
+        />
+      </div>
+    </div>
+
+    <div
+    class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+  >
+    <div class="relative w-full h-full aspect-square">
+      <img
+        alt="Meme image"
+        loading="lazy"
+        decoding="async"
+        data-nimg="fill"
+        class="object-cover"
+        style="
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          color: transparent;
+        "
+        src="./img10.jpg"
+      />
+    </div>
+  </div>
+
+  <div
+  class="group relative overflow-hidden rounded-lg bg-background transition-all col-span-1 row-span-1"
+>
+  <div class="relative w-full h-full aspect-square">
+    <img
+      alt="Meme image"
+      loading="lazy"
+      decoding="async"
+      data-nimg="fill"
+      class="object-cover"
+      style="
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: transparent;
+      "
+      src="./img11.jpg"
+    />
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="./Bleep_files/webpack-580bb2ed102e3be0.js.download"
+      async=""
+    ></script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:"$Sreact.fragment"\n2:I[9924,["177","static/chunks/app/layout-2cc2fcfeea2e2e7f.js"],"ThemeProvider"]\n3:I[7555,[],""]\n4:I[1295,[],""]\n5:I[894,[],"ClientPageRoot"]\n6:I[6453,["688","static/chunks/688-5c088651dc61d6ff.js","974","static/chunks/app/page-671fc4e1fd31621d.js"],"default"]\n9:I[9665,[],"OutletBoundary"]\nc:I[9665,[],"ViewportBoundary"]\ne:I[9665,[],"MetadataBoundary"]\n10:I[6614,[],""]\n:HL["/_next/static/media/a34f9d1faa5f3315-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/css/0b9c6e247cbfffb9.css","style"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '0:{"P":null,"b":"8c6NWkAfAK0nBd2hO4sRa","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0b9c6e247cbfffb9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_d65c78","children":["$","$L2",null,{"attribute":"class","defaultTheme":"dark","enableSystem":true,"disableTransitionOnChange":true,"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L5",null,{"Component":"$6","searchParams":{},"params":{},"promises":["$@7","$@8"]}],"$undefined",null,["$","$L9",null,{"children":["$La","$Lb",null]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","aV4oMFAL-21Z0n9q5HK_L",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([1, "7:{}\n8:{}\n"]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'd:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\na:null\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'b:null\nf:[["$","title","0",{"children":"Bleep"}],["$","meta","1",{"name":"description","content":"Bleep Bleep Bleep"}]]\n',
+      ]);
+    </script>
+    <next-route-announcer style="position: absolute"
+      ><template shadowrootmode="open"
+        ><div
+          aria-live="assertive"
+          id="__next-route-announcer__"
+          role="alert"
+          style="
+            position: absolute;
+            border: 0px;
+            height: 1px;
+            margin: -1px;
+            padding: 0px;
+            width: 1px;
+            clip: rect(0px, 0px, 0px, 0px);
+            overflow: hidden;
+            white-space: nowrap;
+            overflow-wrap: normal;
+          "
+        ></div></template
+    ></next-route-announcer>
+  </body>
+</html>
